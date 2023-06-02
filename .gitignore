@@ -3,7 +3,7 @@
 #---------------------------------------#
 # For mac
 .DS_Store
-
+build/
 # Logs
 .idea
 yarn.lock

@@ -56,9 +56,8 @@ const Header = () => {
         <motion.header
             id={"header-id"}
             className={classNames(
-                "sticky top-0 z-50 pt-4 flex flex-wrap items-center font-light justify-between px-4 py-1 transition duration-500 sm:px-6 lg:px-8",
-                " text-black ",
-                isScrolled ? "bg-white/95 backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-white/25" : "bg-transparent"
+                "sticky top-2 mx-3 border-2 rounded-md z-50 flex flex-wrap items-center font-light justify-between px-4 py-1 transition duration-500 sm:px-6 lg:px-8",
+                "text-black bg-white",
 
             )}
             initial={{ opacity: 0, y: -180 }}
@@ -111,8 +110,7 @@ const Header = () => {
                     target="_blank"
                     rel="noreferrer"
                     className={classNames(
-                        "text-redColor hover:bg-redColor hover:text-white focus:ring-4 focus:ring-redColor hover:border-redColor font-medium rounded-md border-2 text-sm px-4 lg:px-5 py-2 lg:py-1.5 mr-2 focus:outline-none cursor-none",
-                        isScrolled ? "bg-bgColor" : "bg-bgColor"
+                        "text-redColor bg-white hover:bg-redColor hover:text-white focus:ring-4 focus:ring-redColor hover:border-redColor font-medium rounded-md border-2 text-sm px-4 lg:px-5 py-2 lg:py-1.5 mr-2 focus:outline-none cursor-none"
                     )}
                 >
                     Enter App

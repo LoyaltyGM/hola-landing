@@ -14,7 +14,7 @@ export const Card = ({className, cardObject}) => {
                 <div className="flex flex-1 flex-col justify-between px-6 pt-2 pb-6 md:h-40">
                     <div className="flex-1 mt-1">
                         <div className="flex justify-between">
-                            <p className="text-xl lg:text-3xl font-medium text-white mt-1">
+                            <p className="text-xl lg:text-3xl font-medium mt-1">
                                 {cardObject.title}
                             </p>
                         </div>

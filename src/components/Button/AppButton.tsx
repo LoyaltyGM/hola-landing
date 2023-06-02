@@ -9,7 +9,7 @@ export const AppButton = ({ className }: {className?: string}) => {
         <a
             href={WEBSITE}
             className={classNames(
-                "btns-rounded flex flex-row justify-center md:w-full py-4 mx-2 px-8 border-2 items-center custom-cursor",
+                "btns-rounded flex flex-row justify-center md:w-full py-4 md:mx-2 px-8 border-2 items-center custom-cursor",
                 className
             )}
         >

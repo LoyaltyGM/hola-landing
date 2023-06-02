@@ -3,9 +3,9 @@ import { ExternalLinkIcon } from "../Icons/ExternalLinkIcon";
 
 export const SocialNetwork = ({ className = "" }) => {
     return (
-        <div className="relative mx-auto max-w-7xl h-[600px] px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl h-[480px] px-4 sm:px-6 lg:px-8">
             <div className="mx-auto absolute top-[12.5%] lg:top-[15%] left-0 right-0 max-w-lg text-center">
-                <h2 className="font-display text-3xl tracking-tight text-black sm:text-4xl">
+                <h2 className="font-display text-3xl tracking-tight text-redColor sm:text-4xl">
                     Join our community
                 </h2>
                 <p className="mt-4 text-lg tracking-tight text-black">
@@ -19,30 +19,19 @@ export const SocialNetwork = ({ className = "" }) => {
                         href="https://twitter.com/Hola_Sui"
                         target="_blank"
                         rel="noreferrer"
-                        className="secondary-button bg-transparent w-1/3 border-2 border-yellowColor text-black hover:bg-yellowColor hover:text-white mt-10 group inline-flex items-center
+                        className="secondary-button bg-transparent w-1/3 border-2 border-[#AAAAAA] hover:border-yellowColor text-black hover:bg-yellowColor hover:text-white mt-10 group inline-flex items-center
                         justify-center rounded-lg py-2 px-4 pr-2 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 custom-cursor"
                     >
                         Twitter
                         <ExternalLinkIcon />
                     </a>
                     <button
-                        className="secondary-button bg-transparent w-1/3 border-2 border-orangeColor text-black hover:text-white mt-10 group inline-flex items-center
+                        className="secondary-button bg-transparent w-1/3 border-2 border-[#AAAAAA] hover:border-orangeColor border-orangeColor text-black hover:text-white mt-10 group inline-flex items-center
                     justify-center rounded-md py-2 px-4 pr-2 text-sm hover:bg-orangeColor font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 custom-cursor"
                     >
                         Discord
                         <ExternalLinkIcon />
                     </button>
-                    <a
-                        href="https://twitter.com/Hola_Sui"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="secondary-button bg-transparent w-1/3 border-2 border-purpleColor text-black hover:bg-purpleColor hover:text-white mt-4 group inline-flex items-center
-                        justify-center rounded-lg py-2 px-4 pr-2 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 custom-cursor"
-                    >
-                        Docs
-                        <ExternalLinkIcon />
-                    </a>
-
                 </div>
             </div>
         </div>

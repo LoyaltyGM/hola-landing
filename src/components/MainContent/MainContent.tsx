@@ -7,15 +7,20 @@ import { useEffect } from "react";
 
 export const MainContent = () => {
     return (
-        <div className="relative text-center content-center bg-fixed w-full max-h-screen max-w-none md:mb-10">
+        <div className="relative text-center content-center bg-fixed w-full max-h-screen max-w-none mt-20 md:mt-0 md:mb-10">
             <div className="flex-shrink-0">
                 <MainImageLoading
-                    src={ASSETS.main_img}
-                    placeholderSrc={ASSETS.main_img_small}
-                    className="rounded-md min-h-screen lg:max-h-screen md:max-h-screen w-full object-cover"
+                    src={ASSETS.hero}
+                    placeholderSrc={ASSETS.hero_small}
+                    className="hidden min-h-screen md:flex w-full object-cover"
+                />
+                <MainImageLoading
+                    src={ASSETS.hero_mobile}
+                    placeholderSrc={ASSETS.hero_mobile_small}
+                    className="flex md:hidden h-120 mb-10 md:mb-0 md:flex w-full object-cover"
                 />
             </div>
-            <motion.div className="absolute right-0 top-[15%] text-3xl left-0 text-center lg:text-5xl md:text-4xl text-white">
+            <motion.div className="mb-10 md:mb-0 md:absolute right-0 top-[38%] text-xl left-0 text-center lg:text-5xl md:text-4xl text-black font-black">
                 <motion.p
                     initial={{ y: 0, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -44,8 +49,8 @@ export const MainContent = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ ease: "easeInOut", duration: 1.25, delay: 1.5 }}
             >
-                <AppButton className="absolute w-4/5 md:w-1/3 lg:w-1/3 xl:w-1/5 h-9 text-sm bottom-[15%] lg:bottom-[5%] left-[50%] text-center -translate-x-1/2 text-purpleColor border-purpleColor
-                hover:bg-purpleColor hover:text-white bg-bgColor rounded-lg" />
+                <AppButton className="md:absolute w-full md:w-1/3 lg:w-1/3 xl:w-1/5 h-12 text-sm md:bottom-[15%] lg:bottom-[5%] md:left-[50%] text-center md:-translate-x-1/2 text-white bg-purpleColor border-4 border-purpleColor
+                hover:bg-white hover:text-black rounded-lg" />
             </motion.div>
         </div>
     );

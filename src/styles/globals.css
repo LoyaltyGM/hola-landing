@@ -11,7 +11,7 @@
     }
     html,
     body {
-        @apply bg-bgColor text-black h-full w-full text-xl cursor-none;
+        @apply bg-[#FFFFFF] text-black h-full w-full text-xl cursor-none;
     }
 
     .font-exo {
@@ -29,7 +29,7 @@
     }
 
     .app-section > * {
-        @apply mx-auto w-full max-w-7xl;
+        @apply mx-auto w-full max-w-6xl;
     }
 
     .btn-header {
@@ -37,7 +37,7 @@
     }
 
     .layout-base {
-        @apply app-section mx-auto mt-14 flex w-full flex-col items-center space-y-6 pb-8 bg-bgColor;
+        @apply app-section mx-auto mt-14 flex w-full flex-col items-center space-y-6 pb-8;
     }
     .btns-rounded {
         @apply rounded border-purple border-[2.25px] items-center p-3 text-black hover:bg-btnHover hover:text-white active:text-white active:bg-btnActive;
@@ -72,7 +72,7 @@
     transform-origin: 100% 50%;
     transform: translateZ(0);
     opacity: 0.65;
-    background: #FEF7EC;
+    background: #FFFFFF;
 }
 
 .loading {

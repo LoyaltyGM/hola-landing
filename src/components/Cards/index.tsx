@@ -37,10 +37,10 @@ export const CardsSection = () => {
 
     return (
         <div className="place-items-center mt-8 grid gap-5 md:max-w-none md:grid-cols-1 md:gap-6 lg:gap-6 lg:max-w-none lg:grid-cols-2">
-            <Card className="w-full bg-redColor" cardObject={CardInfo[0]} />
-            <Card className="w-full bg-yellowColor" cardObject={CardInfo[1]} />
-            <Card className="w-full bg-purpleColor" cardObject={CardInfo[2]} />
-            <Card className="w-full bg-orangeColor" cardObject={CardInfo[3]} />
+            <Card className="w-full text-redColor bg-bgColor border-4 border-transparent hover:bg-white hover:border-redColor" cardObject={CardInfo[0]} />
+            <Card className="w-full text-yellowColor bg-bgColor border-4 border-transparent hover:bg-white hover:border-yellowColor" cardObject={CardInfo[1]} />
+            <Card className="w-full text-purpleColor bg-bgColor border-4 border-transparent hover:bg-white hover:border-purpleColor" cardObject={CardInfo[2]} />
+            <Card className="w-full text-orangeColor bg-bgColor border-4 border-transparent hover:bg-white hover:border-orangeColor" cardObject={CardInfo[3]} />
         </div>
     );
 };
