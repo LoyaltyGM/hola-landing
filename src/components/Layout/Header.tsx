@@ -56,7 +56,7 @@ const Header = () => {
         <motion.header
             id={"header-id"}
             className={classNames(
-                "sticky top-2 mx-3 border-2 rounded-md z-50 flex flex-wrap items-center font-light justify-between px-4 py-1 transition duration-500 sm:px-6 lg:px-8",
+                "sticky top-2 mx-3 border-2 rounded-md z-50 flex flex-wrap items-center font-light justify-between md:px-4 py-1 transition duration-500 sm:px-6 lg:px-8",
                 "text-black bg-white",
 
             )}
@@ -88,7 +88,7 @@ const Header = () => {
                                 href="https://twitter.com/Hola_Sui"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="btn-header block py-2 pr-4 pl-3 lg:bg-transparent hover:text-yellowColor lg:p-0 cursor-none"
+                                className="btn-header bg-redColor block py-2 pr-4 pl-3 lg:bg-transparent hover:text-yellowColor cursor-none"
                             >
                                 Twitter
                             </a>
@@ -98,7 +98,7 @@ const Header = () => {
                                 href="https://www.discord.gg/X8SXejkVHs"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="btn-header block py-2 pr-4 pl-3  lg:bg-transparent hover:text-orangeColor lg:p-0 cursor-none"
+                                className="btn-header block py-2 pr-4  lg:bg-transparent hover:text-orangeColor cursor-none"
                             >
                                 Discord
                             </a>

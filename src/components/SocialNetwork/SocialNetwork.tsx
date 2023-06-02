@@ -25,13 +25,16 @@ export const SocialNetwork = ({ className = "" }) => {
                         Twitter
                         <ExternalLinkIcon />
                     </a>
-                    <button
-                        className="secondary-button bg-transparent w-1/3 border-2 border-[#AAAAAA] hover:border-orangeColor border-orangeColor text-black hover:text-white mt-10 group inline-flex items-center
+                    <a
+                        href="https://www.discord.gg/X8SXejkVHs"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="secondary-button bg-transparent w-1/3 border-2 border-[#AAAAAA] hover:border-orangeColor text-black hover:text-white mt-10 group inline-flex items-center
                     justify-center rounded-md py-2 px-4 pr-2 text-sm hover:bg-orangeColor font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 custom-cursor"
                     >
                         Discord
                         <ExternalLinkIcon />
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

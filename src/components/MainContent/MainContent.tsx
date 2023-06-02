@@ -1,14 +1,18 @@
 import React from "react";
 import { AppButton } from "components/Button/AppButton";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import ASSETS from "assets/";
 import { MainImageLoading } from "components/MainImageLoading/MainImageLoading";
 import { useEffect } from "react";
 
 export const MainContent = () => {
+    const { scrollYProgress } = useScroll();
+    const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 2]);
     return (
         <div className="relative text-center content-center bg-fixed w-full max-h-screen max-w-none mt-20 md:mt-0 md:mb-10">
-            <div className="flex-shrink-0">
+            <motion.div className="flex-shrink-0" style={{
+                scale
+            }}>
                 <MainImageLoading
                     src={ASSETS.hero}
                     placeholderSrc={ASSETS.hero_small}
@@ -19,14 +23,14 @@ export const MainContent = () => {
                     placeholderSrc={ASSETS.hero_mobile_small}
                     className="flex md:hidden h-120 mb-10 md:mb-0 md:flex w-full object-cover"
                 />
-            </div>
-            <motion.div className="mb-10 md:mb-0 md:absolute right-0 top-[38%] text-xl left-0 text-center lg:text-5xl md:text-4xl text-black font-black">
+            </motion.div>
+            <motion.div className="mb-10 md:mb-0 md:absolute right-0 top-[38%] text-3xl left-0 text-center lg:text-5xl md:text-4xl text-black font-black">
                 <motion.p
                     initial={{ y: 0, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.05 }}
                 >
-                    We Provide the Tools,
+                    We Provide<br className={'md:hidden'}/> the <span className={'text-redColor'}>Tools</span>
                 </motion.p>
 
                 <motion.p
@@ -35,7 +39,7 @@ export const MainContent = () => {
                     transition={{ duration: 1, delay: 0.45 }}
                     className={'mt-2 md:mt-4 italic'}
                 >
-                    You Build the Community
+                    You Build<br className={'md:hidden'}/> the <span className={'text-purpleColor'}>Community</span>
                 </motion.p>
 
                 {/*<motion.p*/}
