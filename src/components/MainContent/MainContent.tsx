@@ -9,7 +9,7 @@ export const MainContent = () => {
     const { scrollYProgress } = useScroll();
     const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 2]);
     return (
-        <div className="relative text-center content-center bg-fixed w-full max-h-screen max-w-none mt-20 md:mt-0 md:mb-10">
+        <div className="relative text-center content-center bg-fixed w-full max-h-screen max-w-screen-xl mt-20 md:mt-0 md:mb-10">
             <motion.div className="flex-shrink-0" style={{
                 scale
             }}>
