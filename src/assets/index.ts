@@ -10,6 +10,7 @@ import main_img_small from "assets/main-screen-small.png"
 import hero_mobile from "assets/Hero_mobile.png"
 import hero_mobile_small from "assets/Hero_mobile_small.png"
 import logo from "assets/logo.png"
+import suiLogo from "assets/SuiLogo.svg"
 
 const ASSETS = {
     // social networks
@@ -20,6 +21,9 @@ const ASSETS = {
     main_img: main_img,
     hero: hero,
     hero_small: hero_small,
+
+    //
+    suiLogo: suiLogo,
 
     hero_mobile:hero_mobile,
     hero_mobile_small:hero_mobile_small,
